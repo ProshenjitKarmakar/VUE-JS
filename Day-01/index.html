@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+</head>
+<body>
+    <div class="mydiv">
+        
+        <h2>Student Name : {{ myarray[0] }}</h2>
+        <h2>Class : {{ myarray[1] }}</h2>
+        <h2>Batch Name : {{ myarray[2] }}</h2>
+        <img v-bind:src="mypic" alt="kire ki somossa">
+        <p v-if="result>=80 && result<=100"> Result : You Got A+</p>
+        <p v-else-if="result>=70 && result<=79"> Result : You Got A</p>
+        <p v-else-if="result>=60 && result<=69"> Result : You Got A-</p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
